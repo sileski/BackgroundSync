@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundSync", "BackgroundSync\BackgroundSync.csproj", "{5EE7834B-AB0C-445A-A8CF-CCF0615B4B81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE7834B-AB0C-445A-A8CF-CCF0615B4B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE7834B-AB0C-445A-A8CF-CCF0615B4B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE7834B-AB0C-445A-A8CF-CCF0615B4B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE7834B-AB0C-445A-A8CF-CCF0615B4B81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
