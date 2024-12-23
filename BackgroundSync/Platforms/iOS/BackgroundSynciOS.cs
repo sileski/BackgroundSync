@@ -1,5 +1,4 @@
 using BackgroundTasks;
-using CoreFoundation;
 using Foundation;
 
 namespace BackgroundSync;
@@ -8,19 +7,27 @@ public class BackgroundSynciOS : IBackgroundSync
 {
     public void SyncData()
     {
-        var request = new BGAppRefreshTaskRequest("com.yourapp.refreshTask");
-        request.EarliestBeginDate = NSDate.FromTimeIntervalSinceNow(10 * 60); // e.g., schedule for 10 minutes from now
-
-        NSError error = null;
-        bool success = BGTaskScheduler.Shared.Submit(request, out error);
-
-        if (success)
+        BGTaskScheduler.Shared.Register("com.yourapp.refreshTask", null, task => 
         {
-            Console.WriteLine("Background sync task requested successfully.");
+            if (task is BGAppRefreshTask refreshTask)
+            {
+                HandleBackgroundTask(refreshTask);
+            }
+        });
+        
+        var request = new BGAppRefreshTaskRequest("com.yourapp.refreshTask")
+        {
+            EarliestBeginDate = NSDate.FromTimeIntervalSinceNow(10 * 60) // 10 minutes from now
+        };
+
+        NSError error;
+        if (BGTaskScheduler.Shared.Submit(request, out error))
+        {
+            Console.WriteLine("Background task request submitted successfully.");
         }
         else
         {
-            Console.WriteLine($"Error submitting background task request: {error?.LocalizedDescription}");
+            Console.WriteLine($"Error submitting background task request: {error.LocalizedDescription}");
         }
     }
     
