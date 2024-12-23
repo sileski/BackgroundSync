@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackgroundSync")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e05703e1c9f39cc18dd95bc76d268da78da70748")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackgroundSync")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackgroundSync")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

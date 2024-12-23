@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mca/Projects/BackgroundSyncProject/BackgroundSync/BackgroundSync.csproj": {}
+    "/Users/mca/Projects/BackgroundSyncTest/BackgroundSync/BackgroundSync.csproj": {}
   },
   "projects": {
-    "/Users/mca/Projects/BackgroundSyncProject/BackgroundSync/BackgroundSync.csproj": {
+    "/Users/mca/Projects/BackgroundSyncTest/BackgroundSync/BackgroundSync.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mca/Projects/BackgroundSyncProject/BackgroundSync/BackgroundSync.csproj",
+        "projectUniqueName": "/Users/mca/Projects/BackgroundSyncTest/BackgroundSync/BackgroundSync.csproj",
         "projectName": "BackgroundSync",
-        "projectPath": "/Users/mca/Projects/BackgroundSyncProject/BackgroundSync/BackgroundSync.csproj",
+        "projectPath": "/Users/mca/Projects/BackgroundSyncTest/BackgroundSync/BackgroundSync.csproj",
         "packagesPath": "/Users/mca/.nuget/packages/",
-        "outputPath": "/Users/mca/Projects/BackgroundSyncProject/BackgroundSync/obj/",
+        "outputPath": "/Users/mca/Projects/BackgroundSyncTest/BackgroundSync/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -23,7 +23,6 @@
           "net8.0-maccatalyst"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -192,7 +191,22 @@
         }
       },
       "runtimes": {
+        "android-arm": {
+          "#import": []
+        },
+        "android-arm64": {
+          "#import": []
+        },
+        "android-x64": {
+          "#import": []
+        },
+        "android-x86": {
+          "#import": []
+        },
         "iossimulator-arm64": {
+          "#import": []
+        },
+        "maccatalyst-arm64": {
           "#import": []
         }
       }
